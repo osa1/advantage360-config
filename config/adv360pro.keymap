@@ -4,6 +4,38 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+// ==== MOUSE-KEY <section begins> ====
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 500
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
+
+#include <dt-bindings/zmk/mouse.h>
+
+/* Custom Device-tree */
+&mmv {
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <0>;       // 40
+  delay-ms = <0>;                   // 0
+};
+
+&msc {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <0>;       // 40
+  delay-ms = <0>;                   // 10
+};
+// ==== MOUSE-KEY <section ends> =====
+
+/ {
+       behaviors {
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <&kp COLON &kp COLON>;
+        };
+    };
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
