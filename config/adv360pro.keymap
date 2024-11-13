@@ -62,11 +62,11 @@
 
         SYMBOL {
             bindings = <
-&kp EQUAL       &kp F1         &kp F2          &kp F3                &kp F4                 &kp F5     &kp F6                                                    &kp F7        &kp F8              &kp F9             &kp F10             &kp F11               &kp F12  &kp F13
-&trans          &kp PIPE       &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &trans                                                    &kp C_VOL_UP  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)  &mmv MOVE_Y(-1000)  &mmv MOVE_X(1000)     &trans   &trans
-&trans          &double_colon  &kp COMMA       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &trans          &trans  &trans    &trans  &trans          &kp C_VOL_DN  &mmv MOVE_X(-500)   &mmv MOVE_Y(500)   &mmv MOVE_Y(-500)   &mmv MOVE_X(500)      &trans   &trans
-&kp LEFT_SHIFT  &trans         &trans          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                             &trans    &trans                                &mmv MOVE_X(-250)   &mmv MOVE_Y(250)   &mmv MOVE_Y(-250)   &mmv MOVE_X(250)      &trans   &kp RIGHT_SHIFT
-&trans          &trans         &trans          &kp LESS_THAN         &kp GREATER_THAN                          &trans  &trans  &trans    &trans  &trans  &trans                                    &trans             &trans              &trans                &trans   &trans
+&kp EQUAL       &kp F1         &kp F2          &kp F3                &kp F4                 &kp F5     &kp F6                                                    &kp F7        &kp F8                &kp F9                &kp F10             &kp F11                   &kp F12  &kp F13
+&trans          &kp PIPE       &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &trans                                                    &kp C_VOL_UP  &mmv MOVE_LEFT(1000)  &mmv MOVE_DOWN(1000)  &mmv MOVE_UP(1000)  &mmv MOVE_RIGHT(1000)     &trans   &trans
+&trans          &double_colon  &kp COMMA       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &trans          &trans  &trans    &trans  &trans          &kp C_VOL_DN  &mmv MOVE_LEFT(500)   &mmv MOVE_DOWN(500)   &mmv MOVE_UP(500)   &mmv MOVE_RIGHT(500)      &trans   &trans
+&kp LEFT_SHIFT  &trans         &trans          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                             &trans    &trans                                &mmv MOVE_LEFT(250)   &mmv MOVE_DOWN(250)   &mmv MOVE_UP(250)   &mmv MOVE_RIGHT(250)      &trans   &kp RIGHT_SHIFT
+&trans          &trans         &trans          &kp LESS_THAN         &kp GREATER_THAN                          &trans  &trans  &trans    &trans  &trans  &trans                                      &trans                &trans              &trans                    &trans   &trans
             >;
         };
     };
